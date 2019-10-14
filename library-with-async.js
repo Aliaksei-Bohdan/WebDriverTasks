@@ -16,7 +16,7 @@ const {Builder, By, Key, until} = require('selenium-webdriver');
 
     submitBtn.click();
     // await driver.sleep(1000);
-    await driver.wait(until.elementLocated(By.css('.alert-success')),5000).getText().then(function(txt){
+    await driver.wait(until.elementLocated(By.css('.alert-success')),15000).getText().then(function(txt){
         console.log("Alert success test is: " + txt);
     });
 
