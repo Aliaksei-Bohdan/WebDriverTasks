@@ -9,7 +9,7 @@ var webdriver = require('selenium-webdriver'),
         beforeEach(async () => {
             driver = await new webdriver.Builder().forBrowser('chrome').build();
             await driver.get('https://library-app.firebaseapp.com/');
-            await driver.manage().window().setPosition(600, 0); // Why does not work with selenium-webdriver version 4.0.0 alpha?
+            // await driver.manage().window().setPosition(600, 0); // Why does not work with selenium-webdriver version 4.0.0 alpha?
         });
 
         afterEach(async () => {
